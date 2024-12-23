@@ -1,0 +1,51 @@
+estado = 1;
+concatenar estado a vector;
+
+iter T veces
+
+if estado == 1:
+	if sim>=.87
+		estado = 1;
+	else
+		estado = 2;
+		concatenar estado a vector;
+
+else
+	simular uniforme
+	if sim>= 0.6
+		estado = 1;
+	else
+		estado = 2;
+		concatenar estado a vector;
+
+
+
+
+________________________________________________________________
+
+
+
+zeros(53,1)
+
+estado = 1;
+zeros(i,1) = estado;
+
+iter T-1 veces
+
+if estado == 1:
+	simular uniforme
+	if sim>=.87
+		estado = 1;
+	else
+		estado = 2;
+
+else
+	simular uniforme
+	if sim>= 0.6
+		estado = 1;
+	else
+		estado = 2;
+
+
+zeros(i+1,1) = estado;
+
